@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="homeheartprotocol" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/homeheartprotocol" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+					<Add directory="src" />
+				</Compiler>
+				<Linker>
+					<Add library="pthread" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/homeheartprotocol" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="hhp_tests">
+				<Option output="bin/hhp_tests/homeheartprotocol" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/hhp_tests/" />
+				<Option object_output="obj/hhp_tests/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-m32" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-m32" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="include/hhp.h" />
+		<Unit filename="include/hhp_config.h" />
+		<Unit filename="include/hhp_error_code.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="serial.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/crc16.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/crc16.h" />
+		<Unit filename="src/emsnmp/emsnmp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/emsnmp/emsnmp.h" />
+		<Unit filename="src/emsnmp/snmpdata.h" />
+		<Unit filename="src/emsnmp/user.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/emsnmp/user.h" />
+		<Unit filename="src/hhp_core.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/hhp_core.h" />
+		<Unit filename="src/hhp_msg_entry.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
