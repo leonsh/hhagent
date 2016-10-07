@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- ***************************************************************************************************************** -->
+<!--
+SerialBootTool Config XML file
+
+<For Advanced User's Only>
+Valid ranges only indicate the range accepted by SerialBootTool.
+Values in the valid range may not work with target hardware. 
+
+Summary of XML tags:
+====================
+<serialboottool_config>Config File Data<\serialboottool_config>
+  
+  ===================================================================
+
+  <version>XML layout version</version> 
+    Do Not Modify 
+  
+  ===================================================================
+
+  <general_cfg_data> Start general config data
+
+    <log_rx_bytes>false</log_rx_bytes>
+     Log incoming Rx bytes to operations log.
+     (Note using this option will slow down OtaServer performance) 
+      Valid Range:
+      true
+      false
+
+    <log_tx_bytes>false</log_tx_bytes>
+     Log outgoing Tx bytes to operations log.
+     (Note using this option will slow down OtaServer performance) 
+      Valid Range:
+      true
+      false
+
+    <show_no_reset_vector_verify>true</show_no_reset_vector_verify>
+     Show the no reset vector verify option check box
+     Valid Range:
+      true
+      false
+
+    <load_timeout>5000</load_timeout>
+     Number of milliseconds to wait for the next load transfer message
+     (Note: -1 = Infinite Timeout - Not Recommended)
+      Valid Range:
+        -1 to 2,147,483,647  (Max Int32)
+
+    <debug_no_timeout>false</debug_no_timeout>
+     Allow program debugging by setting all command timeouts to infinite.
+      Valid Range:
+      true
+      false
+
+ </general_cfg_data> End general config data
+
+  ===================================================================
+
+ -->
+<!-- ***************************************************************************************************************** -->
+<serialboottool_config>
+  <version>0.0.1</version>
+  <!-- ***************************************************************************************************************** -->
+  <general_cfg_data>
+    <log_rx_bytes>false</log_rx_bytes>
+    <log_tx_bytes>false</log_tx_bytes>
+    <load_timeout>5000</load_timeout>
+    <show_no_reset_vector_verify>true</show_no_reset_vector_verify>
+    <debug_no_timeout>false</debug_no_timeout>
+  </general_cfg_data>
+  <!-- ***************************************************************************************************************** -->
+</serialboottool_config>
+

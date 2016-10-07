@@ -1,0 +1,103 @@
+# depslib dependency file v1.0
+1474855838 source:e:\workspace\icom\homeheartprotocol\tests\main.c
+	<unity.h>
+
+1471609221 source:e:\workspace\icom\homeheartprotocol\unity\src\unity.c
+	"unity.h"
+	<stddef.h>
+	<stdio.h>
+
+1471598596 e:\workspace\icom\homeheartprotocol\unity\src\unity.h
+	"unity_internals.h"
+
+1471598596 e:\workspace\icom\homeheartprotocol\unity\src\unity_internals.h
+	"unity_config.h"
+	<setjmp.h>
+	<stdint.h>
+	<limits.h>
+	<math.h>
+	<stdio.h>
+	<stdio.h>
+
+1471598596 e:\workspace\icom\homeheartprotocol\tests\unity_config.h
+
+1474860924 source:e:\workspace\icom\homeheartprotocol\tests\test_hhp_core.c
+	<string.h>
+	<unity.h>
+	<hhp_core.c>
+
+1474895983 e:\workspace\icom\homeheartprotocol\src\hhp_core.c
+	<hhp.h>
+	"hhp_core.h"
+	"crc16.h"
+	<string.h>
+	"emsnmp/emsnmp.h"
+
+1474870122 e:\workspace\icom\homeheartprotocol\include\hhp.h
+	<stdint.h>
+	<stdbool.h>
+	<compiler.h>
+	"hhp_error_code.h"
+	"hhp_config.h"
+
+1474859957 e:\workspace\icom\homeheartprotocol\include\compiler.h
+	<stdint.h>
+	<stdbool.h>
+
+1472477232 e:\workspace\icom\homeheartprotocol\include\hhp_error_code.h
+
+1474869471 e:\workspace\icom\homeheartprotocol\src\hhp_core.h
+	<stdint.h>
+	<stdbool.h>
+
+1379035325 e:\workspace\icom\homeheartprotocol\src\crc16.h
+
+1471359955 e:\workspace\icom\homeheartprotocol\src\crc16.c
+	"crc16.h"
+
+1474896393 e:\workspace\icom\homeheartprotocol\include\hhp_config.h
+
+1474860304 source:e:\workspace\icom\homeheartprotocol\src\crc16.c
+	"crc16.h"
+	<compiler.h>
+
+1474896287 source:e:\workspace\icom\homeheartprotocol\src\emsnmp\emsnmp.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<errno.h>
+	<stdint.h>
+	"emsnmp.h"
+	"snmpdata.h"
+	"user.h"
+	<hhp_error_code.h>
+	<hhp.h>
+
+1474856575 e:\workspace\icom\homeheartprotocol\src\emsnmp\emsnmp.h
+
+1472023703 e:\workspace\icom\homeheartprotocol\src\emsnmp\snmpdata.h
+
+1104375014 e:\workspace\icom\homeheartprotocol\src\emsnmp\user.h
+
+1472023751 source:e:\workspace\icom\homeheartprotocol\src\emsnmp\hhp_snmp.c
+
+1472566226 source:e:\workspace\icom\homeheartprotocol\src\emsnmp\snmpdata.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"emsnmp.h"
+	"snmpdata.h"
+	"user.h"
+
+1104375014 source:e:\workspace\icom\homeheartprotocol\src\emsnmp\user.c
+	<stdio.h>
+	<string.h>
+	<time.h>
+	"emsnmp.h"
+	"snmpdata.h"
+	"user.h"
+
+1474896015 source:e:\workspace\icom\homeheartprotocol\src\hhp_msg_entry.c
+	<hhp.h>
+	"emsnmp/emsnmp.h"
+

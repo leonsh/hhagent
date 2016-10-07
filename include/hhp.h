@@ -332,69 +332,36 @@ void hh_msg_gateway_query_taglist(void);
  * - 当返回类型为\ref HH_MSG_GATEWAY时，表明收到的数据为网关类型设备所返回的查询
  * 结果。
  * 
- * SDK使用过程中需要调用系统外设函数来完成串口的数据收发，以及调用用户注册
- * 的回调函数完成设备控制的相关功能。SDK协议栈初始化，主要完成向SDK注册回
- * 调函数，并开始接收协调器数据。
- * Copy-paste the following setup code to your user application:
- * \snippet qs_dac_basic.c setup
+ * \section hhpdoc_qs_zigbee_control 组网控制
+ * 可以通过调用\ref hh_switch_status 来切换协调器当前状态，\ref HH_CONN_CTRL 仅
+ * 处理组网相关的数据报文。\ref HH_CONN_ONLINE 可以接收子设备发送的数据报文。
  *
- * Add to user application initialization (typically the start of \c main()):
- * \snippet qs_dac_basic.c setup_init
+ * 
+ * \section hhpdoc_qs_dev_control 设备控制
+ * 调用\ref hh_msg_set_item 控制设备，该函数并不会立即发送数据到设备，应用程序
+ * 需要继续调用\ref hh_dev_send_msg 来完成控制信息的发送。
  *
- * \subsection asfdoc_sam0_dac_basic_use_case_setup_flow Workflow
- * -# Create a module software instance structure for the DAC module to store
- *    the DAC driver state while in use.
- *    \snippet qs_dac_basic.c module_inst
- *    \note This should never go out of scope as long as the module is in use.
- *          In most cases, this should be global.
  *
- * -# Configure the DAC module.
- *  -# Create a DAC module configuration struct, which can be filled out to
- *     adjust the configuration of a physical DAC peripheral.
- *     \snippet qs_dac_basic.c setup_config
- *  -# Initialize the DAC configuration struct with the module's default values.
- *     \snippet qs_dac_basic.c setup_config_defaults
- *     \note This should always be performed before using the configuration
- *           struct to ensure that all values are initialized to known default
- *           settings.
+ * \section hhpdoc_qs_gateway 网关类型设备的控制
+ * 网关类型设备由于含有不同类型的子设备，所以其控制项存在多种组合，应用程序可以
+ * 通过发送网关查询报文来获取其相应的设置项\ref hh_msg_gateway_query_detail 
+ * \ref hh_msg_gateway_query_devlist \ref hh_msg_gateway_query_taglist
+ * 并通过\ref hh_get_gateway_info 来获取网关设备返回的信息。
  *
- * -# Configure the DAC channel.
- *  -# Create a DAC channel configuration struct, which can be filled out to
- *     adjust the configuration of a physical DAC output channel.
- *     \snippet qs_dac_basic.c setup_ch_config
- *  -# Initialize the DAC channel configuration struct with the module's default
- *     values.
- *     \snippet qs_dac_basic.c setup_ch_config_defaults
- *     \note This should always be performed before using the configuration
- *           struct to ensure that all values are initialized to known default
- *           settings.
  *
- *  -# Configure the DAC channel with the desired channel settings.
- *     \snippet qs_dac_basic.c setup_ch_set_config
- *  -# Enable the DAC channel so that it can output a voltage.
- *     \snippet qs_dac_basic.c setup_ch_enable
+ * \section hhpdoc_qs_zigbee_fw_upgrade 协调器固件烧录
+ * Zigbee协调器在使用前，需要先烧录固件程序。
+ * - 将协调器模块模块连接到电脑USB口
+ * - 将Zigbee(CC2530)烧录器连接到协调器模块
+ * - 将fw/CC2530SB.hex bootloader通过烧录器烧写到cc2530
+ * - 断开烧录器（后续步骤不再需要烧录器）
+ * - 主程序通过SerialBootTool.exe烧写的cc2530, 串口参数为115200, 8N1。需要注意在
+ * 烧写前需要按一下协调器模块的Reset按钮，然后点击Load Image（重起后的2秒内）按
+ * 钮进行串口烧录。
  *
- * -# Enable the DAC module.
- *    \snippet qs_dac_basic.c setup_enable
- *
- * \section asfdoc_sam0_dac_basic_use_case_main Use Case
- *
- * \subsection asfdoc_sam0_dac_basic_use_case_main_code Code
- * Copy-paste the following code to your user application:
- * \snippet qs_dac_basic.c main
- *
- * \subsection asfdoc_sam0_dac_basic_use_case_main_flow Workflow
- * -# Create a temporary variable to track the current DAC output value.
- *    \snippet qs_dac_basic.c main_output_var
- * -# Enter an infinite loop to continuously output new conversion values to
- *    the DAC.
- *    \snippet qs_dac_basic.c main_loop
- * -# Write the next conversion value to the DAC, so that it will be output on
- *    the device's DAC analog output pin.
- *    \snippet qs_dac_basic.c main_write
- * -# Increment and wrap the DAC output conversion value, so that a ramp pattern
- *    will be generated.
- *    \snippet qs_dac_basic.c main_inc_val
+ * \section hhpdoc_qs_windows_app Win32测试源代码使用
+ * 下载codeblock mingw-nosetup http://www.codeblocks.org/downloads, 打开
+ * hhp.workspace，编译homeheartprotocol工程即可得到Win32 Console应用程序
  */
 
 #ifdef __cplusplus
