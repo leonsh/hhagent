@@ -1,0 +1,742 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>hhp: hhp.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">hhp
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">hhp.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="compiler_8h_source.html">compiler.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="hhp__error__code_8h_source.html">hhp_error_code.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="hhp__config_8h_source.html">hhp_config.h</a>&quot;</code><br />
+</div>
+<p><a href="hhp_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhh__pdu.html">hh_pdu</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhh__dev__info.html">hh_dev_info</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmsg__entry.html">msg_entry</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhh__oid__entry.html">hh_oid_entry</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a77916e99881f135882fca12cd8badb50"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hhp_8h.html#a77916e99881f135882fca12cd8badb50">hh_conn_status</a> { <a class="el" href="hhp_8h.html#a77916e99881f135882fca12cd8badb50a6afeda4d7d7aa514f6fa0b450db696c3">HH_CONN_ONLINE</a> = 0x00, 
+<a class="el" href="hhp_8h.html#a77916e99881f135882fca12cd8badb50a3cd976b5f742e09a33a283a0b3abf46f">HH_CONN_CTRL</a> = 0xC0, 
+<a class="el" href="hhp_8h.html#a77916e99881f135882fca12cd8badb50adb7b26b32d3ab97434808068e2c22d0d">HH_CONN_OFFLINE</a> = 0xFF
+ }</td></tr>
+<tr class="separator:a77916e99881f135882fca12cd8badb50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b8d1b9a4b349acdeeace7b7cb915d4b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hhp_8h.html#a3b8d1b9a4b349acdeeace7b7cb915d4b">hh_join_stage</a> { <a class="el" href="hhp_8h.html#a3b8d1b9a4b349acdeeace7b7cb915d4baae530fe6fdda6324b9952d84ac637656">HH_JOIN_REQUEST</a>, 
+<a class="el" href="hhp_8h.html#a3b8d1b9a4b349acdeeace7b7cb915d4bad3ca4c3f1a46ab4f45355d32d7ba0fb8">HH_JOIN_FINISHED</a>
+ }</td></tr>
+<tr class="separator:a3b8d1b9a4b349acdeeace7b7cb915d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27a8f388e30b0b4b0797d59cee92609b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hhp_8h.html#a27a8f388e30b0b4b0797d59cee92609b">hh_msg_type</a> { <br />
+&#160;&#160;<a class="el" href="hhp_8h.html#a27a8f388e30b0b4b0797d59cee92609bae04dd5fb9b7285a051a145a1ecf05ce2">HH_MSG_DATA</a>, 
+<a class="el" href="hhp_8h.html#a27a8f388e30b0b4b0797d59cee92609bad4dc25faa9c530b2e8c4c8b3299231b5">HH_MSG_CTRL</a>, 
+<a class="el" href="hhp_8h.html#a27a8f388e30b0b4b0797d59cee92609ba2249e319624f81fb95e6518d21d17ef3">HH_MSG_SET_RESP</a>, 
+<a class="el" href="hhp_8h.html#a27a8f388e30b0b4b0797d59cee92609baa6b4c470e232fe47c3427f56d1bc9010">HH_MSG_GET_RESP</a>, 
+<br />
+&#160;&#160;<a class="el" href="hhp_8h.html#a27a8f388e30b0b4b0797d59cee92609ba5f4a2b16af3cb09489adf39a7a20b39c">HH_MSG_TRAP</a>, 
+<a class="el" href="hhp_8h.html#a27a8f388e30b0b4b0797d59cee92609ba2f69650dda4bc9de98454a66d4eb7106">HH_MSG_INFORM</a>, 
+<a class="el" href="hhp_8h.html#a27a8f388e30b0b4b0797d59cee92609baf00820569483fdc14106dc8ac8c8740f">HH_MSG_GATEWAY</a>
+<br />
+ }</td></tr>
+<tr class="separator:a27a8f388e30b0b4b0797d59cee92609b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b5d15eee725076fb83f388d51f7c129"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hhp_8h.html#a5b5d15eee725076fb83f388d51f7c129">hh_oid_name</a> { <br />
+&#160;&#160;<a class="el" href="hhp_8h.html#a5b5d15eee725076fb83f388d51f7c129a657970c18e74bc93a0f9054b4cec3e66">HH_OID_SWITCH</a>, 
+<a class="el" href="hhp_8h.html#a5b5d15eee725076fb83f388d51f7c129a39ccf96192930966c2144674e1360181">HH_OID_SWITCH_STATUS</a>, 
+<a class="el" href="hhp_8h.html#a5b5d15eee725076fb83f388d51f7c129a0f4534c67ebfb41e4c46933ecbd2a208">HH_OID_ION</a>, 
+<a class="el" href="hhp_8h.html#a5b5d15eee725076fb83f388d51f7c129a00d566c3d7b195d46ea9c975bc4fcf92">HH_OID_ION_STATUS</a>, 
+<br />
+&#160;&#160;<a class="el" href="hhp_8h.html#a5b5d15eee725076fb83f388d51f7c129ae86c3f39eebad6339f875147de89c6c0">HH_OID_ION_ELEC</a>
+<br />
+ }</td></tr>
+<tr class="separator:a5b5d15eee725076fb83f388d51f7c129"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95b9ce8c5f2b2da9d20649f8fcb7180c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hhp_8h.html#a95b9ce8c5f2b2da9d20649f8fcb7180c">hh_oid_type</a> { <a class="el" href="hhp_8h.html#a95b9ce8c5f2b2da9d20649f8fcb7180ca627e0ff4d654d271336a75f15936dcd0">HH_OID_INTEGER</a> = 0x02, 
+<a class="el" href="hhp_8h.html#a95b9ce8c5f2b2da9d20649f8fcb7180ca048174ebf3790468e65dec94ff740d2c">HH_OID_OCTET_STRING</a> = 0x04
+ }</td></tr>
+<tr class="separator:a95b9ce8c5f2b2da9d20649f8fcb7180c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba91fa6e34cee1d7f15cd84f12ca9990"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hhp_8h.html#aba91fa6e34cee1d7f15cd84f12ca9990">hh_dev_type</a> { <a class="el" href="hhp_8h.html#aba91fa6e34cee1d7f15cd84f12ca9990a98e59a40249693ac8c979081e54651b3">HH_DEV_SWITCH</a> = 0x00010000, 
+<a class="el" href="hhp_8h.html#aba91fa6e34cee1d7f15cd84f12ca9990ac0575e94b4efc93b84fd5ff93ed891f8">HH_DEV_ION</a> = 0x00010000
+ }</td></tr>
+<tr class="separator:aba91fa6e34cee1d7f15cd84f12ca9990"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a83e4ed77e3b8d7d46e724f26139d6840"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hhp_8h.html#a83e4ed77e3b8d7d46e724f26139d6840">hh_switch_status</a> (enum <a class="el" href="hhp_8h.html#a77916e99881f135882fca12cd8badb50">hh_conn_status</a> status)</td></tr>
+<tr class="memdesc:a83e4ed77e3b8d7d46e724f26139d6840"><td class="mdescLeft">&#160;</td><td class="mdescRight">切换Zigbee模块工作状态  <a href="#a83e4ed77e3b8d7d46e724f26139d6840">更多...</a><br /></td></tr>
+<tr class="separator:a83e4ed77e3b8d7d46e724f26139d6840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3979e3a5a42c1cc8a08251522909d5a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hhp_8h.html#a3979e3a5a42c1cc8a08251522909d5a4">hh_usart_reg_write_func</a> (void(*usart_send)(uint8_t))</td></tr>
+<tr class="memdesc:a3979e3a5a42c1cc8a08251522909d5a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">注册串口发送函数  <a href="#a3979e3a5a42c1cc8a08251522909d5a4">更多...</a><br /></td></tr>
+<tr class="separator:a3979e3a5a42c1cc8a08251522909d5a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d4c02849c73b93b7317d901576cf3fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hhp_8h.html#a8d4c02849c73b93b7317d901576cf3fc">hh_usart_write</a> (uint8_t data)</td></tr>
+<tr class="memdesc:a8d4c02849c73b93b7317d901576cf3fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">串口接收函数  <a href="#a8d4c02849c73b93b7317d901576cf3fc">更多...</a><br /></td></tr>
+<tr class="separator:a8d4c02849c73b93b7317d901576cf3fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05ff27fcd501dc489449c057880c8dd7"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="hhp_8h.html#a27a8f388e30b0b4b0797d59cee92609b">hh_msg_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hhp_8h.html#a05ff27fcd501dc489449c057880c8dd7">hh_usart_read</a> (uint8_t data)</td></tr>
+<tr class="memdesc:a05ff27fcd501dc489449c057880c8dd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取串口数据  <a href="#a05ff27fcd501dc489449c057880c8dd7">更多...</a><br /></td></tr>
+<tr class="separator:a05ff27fcd501dc489449c057880c8dd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0398e5f500855d8c263266ce435bbb0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hhp_8h.html#a0398e5f500855d8c263266ce435bbb0d">hh_usart_reset_buf</a> (void)</td></tr>
+<tr class="memdesc:a0398e5f500855d8c263266ce435bbb0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">重置串口接收缓冲区  <a href="#a0398e5f500855d8c263266ce435bbb0d">更多...</a><br /></td></tr>
+<tr class="separator:a0398e5f500855d8c263266ce435bbb0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a949a8f411c0bcaac8dd1fa4f278cc559"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hhp_8h.html#a949a8f411c0bcaac8dd1fa4f278cc559">hh_reg_join_cb_func</a> (void(*join_req)(struct <a class="el" href="structhh__dev__info.html">hh_dev_info</a> *, enum <a class="el" href="hhp_8h.html#a3b8d1b9a4b349acdeeace7b7cb915d4b">hh_join_stage</a>))</td></tr>
+<tr class="memdesc:a949a8f411c0bcaac8dd1fa4f278cc559"><td class="mdescLeft">&#160;</td><td class="mdescRight">注册新设备加入回调函数  <a href="#a949a8f411c0bcaac8dd1fa4f278cc559">更多...</a><br /></td></tr>
+<tr class="separator:a949a8f411c0bcaac8dd1fa4f278cc559"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b4791e9c6376aaf7ac90e036ef07698"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hhp_8h.html#a1b4791e9c6376aaf7ac90e036ef07698">hh_join_ack</a> (struct <a class="el" href="structhh__dev__info.html">hh_dev_info</a> *info, bool accept)</td></tr>
+<tr class="memdesc:a1b4791e9c6376aaf7ac90e036ef07698"><td class="mdescLeft">&#160;</td><td class="mdescRight">应答新设备加入请求  <a href="#a1b4791e9c6376aaf7ac90e036ef07698">更多...</a><br /></td></tr>
+<tr class="separator:a1b4791e9c6376aaf7ac90e036ef07698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a687bd14d8a4aa16f6fa6a34b15f1640e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hhp_8h.html#a687bd14d8a4aa16f6fa6a34b15f1640e">hh_dev_reg_cb_report</a> (struct <a class="el" href="structhh__dev__info.html">hh_dev_info</a> *info)</td></tr>
+<tr class="memdesc:a687bd14d8a4aa16f6fa6a34b15f1640e"><td class="mdescLeft">&#160;</td><td class="mdescRight">注册设备主动上报回调函数  <a href="#a687bd14d8a4aa16f6fa6a34b15f1640e">更多...</a><br /></td></tr>
+<tr class="separator:a687bd14d8a4aa16f6fa6a34b15f1640e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad06f3447a19ee4869d456faf061381c3"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hhp_8h.html#ad06f3447a19ee4869d456faf061381c3">hh_msg_get_dev_id</a> (uint16_t *dev)</td></tr>
+<tr class="memdesc:ad06f3447a19ee4869d456faf061381c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取PDU报文发送设备的ID  <a href="#ad06f3447a19ee4869d456faf061381c3">更多...</a><br /></td></tr>
+<tr class="separator:ad06f3447a19ee4869d456faf061381c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a930e6d6848ed6dab5d3ca00eb5e0f974"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hhp_8h.html#a930e6d6848ed6dab5d3ca00eb5e0f974">hh_msg_get_next_item</a> (struct <a class="el" href="structhh__oid__entry.html">hh_oid_entry</a> *entry)</td></tr>
+<tr class="memdesc:a930e6d6848ed6dab5d3ca00eb5e0f974"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取PDU报文中的配置项信息  <a href="#a930e6d6848ed6dab5d3ca00eb5e0f974">更多...</a><br /></td></tr>
+<tr class="separator:a930e6d6848ed6dab5d3ca00eb5e0f974"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87c2421a69f6bc778b1d1a20501c413c"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hhp_8h.html#a87c2421a69f6bc778b1d1a20501c413c">hh_msg_set_item</a> (struct <a class="el" href="structhh__oid__entry.html">hh_oid_entry</a> *entry, uint8_t len)</td></tr>
+<tr class="memdesc:a87c2421a69f6bc778b1d1a20501c413c"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建Set PDU报文中的配置项信息。  <a href="#a87c2421a69f6bc778b1d1a20501c413c">更多...</a><br /></td></tr>
+<tr class="separator:a87c2421a69f6bc778b1d1a20501c413c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac17eb200aa79688cf4504f710d6c3488"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hhp_8h.html#ac17eb200aa79688cf4504f710d6c3488">hh_dev_send_msg</a> (uint16_t dev)</td></tr>
+<tr class="memdesc:ac17eb200aa79688cf4504f710d6c3488"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送PDU报文到设备  <a href="#ac17eb200aa79688cf4504f710d6c3488">更多...</a><br /></td></tr>
+<tr class="separator:ac17eb200aa79688cf4504f710d6c3488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2e26d540938c15dd7d3a341b0ac4ffe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hhp_8h.html#ad2e26d540938c15dd7d3a341b0ac4ffe">hh_get_gateway_info</a> (uint8_t **data, uint32_t *len)</td></tr>
+<tr class="memdesc:ad2e26d540938c15dd7d3a341b0ac4ffe"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取Gateway设备返回的查询信息  <a href="#ad2e26d540938c15dd7d3a341b0ac4ffe">更多...</a><br /></td></tr>
+<tr class="separator:ad2e26d540938c15dd7d3a341b0ac4ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0a9c3f0a08a8dd6db2dc45faeccb57a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hhp_8h.html#ad0a9c3f0a08a8dd6db2dc45faeccb57a">hh_msg_gateway_query_detail</a> (void)</td></tr>
+<tr class="memdesc:ad0a9c3f0a08a8dd6db2dc45faeccb57a"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送查询消息到Gateway设备，查询命令为Detail  <a href="#ad0a9c3f0a08a8dd6db2dc45faeccb57a">更多...</a><br /></td></tr>
+<tr class="separator:ad0a9c3f0a08a8dd6db2dc45faeccb57a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28be4ac81f3a213f5cbd9a6e3266d318"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hhp_8h.html#a28be4ac81f3a213f5cbd9a6e3266d318">hh_msg_gateway_query_devlist</a> (void)</td></tr>
+<tr class="memdesc:a28be4ac81f3a213f5cbd9a6e3266d318"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送查询消息到Gateway设备，查询命令为DevList  <a href="#a28be4ac81f3a213f5cbd9a6e3266d318">更多...</a><br /></td></tr>
+<tr class="separator:a28be4ac81f3a213f5cbd9a6e3266d318"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39226e1e2140165064d1ba1a4f7a54bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hhp_8h.html#a39226e1e2140165064d1ba1a4f7a54bf">hh_msg_gateway_query_taglist</a> (void)</td></tr>
+<tr class="memdesc:a39226e1e2140165064d1ba1a4f7a54bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送查询消息到Gateway设备，查询命令为TagList  <a href="#a39226e1e2140165064d1ba1a4f7a54bf">更多...</a><br /></td></tr>
+<tr class="separator:a39226e1e2140165064d1ba1a4f7a54bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">枚举类型说明</h2>
+<a class="anchor" id="a77916e99881f135882fca12cd8badb50"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="hhp_8h.html#a77916e99881f135882fca12cd8badb50">hh_conn_status</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>设备状态 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a77916e99881f135882fca12cd8badb50a6afeda4d7d7aa514f6fa0b450db696c3"></a>HH_CONN_ONLINE&#160;</td><td class="fielddoc">
+<p>设备在线，可以正常通讯 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a77916e99881f135882fca12cd8badb50a3cd976b5f742e09a33a283a0b3abf46f"></a>HH_CONN_CTRL&#160;</td><td class="fielddoc">
+<p>控制状态，仅收发组网报文 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a77916e99881f135882fca12cd8badb50adb7b26b32d3ab97434808068e2c22d0d"></a>HH_CONN_OFFLINE&#160;</td><td class="fielddoc">
+<p>设备离线 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="aba91fa6e34cee1d7f15cd84f12ca9990"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="hhp_8h.html#aba91fa6e34cee1d7f15cd84f12ca9990">hh_dev_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>接收到的数据类型 设备类型 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="aba91fa6e34cee1d7f15cd84f12ca9990a98e59a40249693ac8c979081e54651b3"></a>HH_DEV_SWITCH&#160;</td><td class="fielddoc">
+<p>开关 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aba91fa6e34cee1d7f15cd84f12ca9990ac0575e94b4efc93b84fd5ff93ed891f8"></a>HH_DEV_ION&#160;</td><td class="fielddoc">
+<p>ION </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a3b8d1b9a4b349acdeeace7b7cb915d4b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="hhp_8h.html#a3b8d1b9a4b349acdeeace7b7cb915d4b">hh_join_stage</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>设备注册状态 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a3b8d1b9a4b349acdeeace7b7cb915d4baae530fe6fdda6324b9952d84ac637656"></a>HH_JOIN_REQUEST&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a3b8d1b9a4b349acdeeace7b7cb915d4bad3ca4c3f1a46ab4f45355d32d7ba0fb8"></a>HH_JOIN_FINISHED&#160;</td><td class="fielddoc">
+<p>注册请求</p>
+<p>注册完成 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a27a8f388e30b0b4b0797d59cee92609b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="hhp_8h.html#a27a8f388e30b0b4b0797d59cee92609b">hh_msg_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a27a8f388e30b0b4b0797d59cee92609bae04dd5fb9b7285a051a145a1ecf05ce2"></a>HH_MSG_DATA&#160;</td><td class="fielddoc">
+<p>数据接收中，未完整报文 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a27a8f388e30b0b4b0797d59cee92609bad4dc25faa9c530b2e8c4c8b3299231b5"></a>HH_MSG_CTRL&#160;</td><td class="fielddoc">
+<p>控制报文 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a27a8f388e30b0b4b0797d59cee92609ba2249e319624f81fb95e6518d21d17ef3"></a>HH_MSG_SET_RESP&#160;</td><td class="fielddoc">
+<p>修改设备配置结果 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a27a8f388e30b0b4b0797d59cee92609baa6b4c470e232fe47c3427f56d1bc9010"></a>HH_MSG_GET_RESP&#160;</td><td class="fielddoc">
+<p>查询设备配置结果 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a27a8f388e30b0b4b0797d59cee92609ba5f4a2b16af3cb09489adf39a7a20b39c"></a>HH_MSG_TRAP&#160;</td><td class="fielddoc">
+<p>设备主动上报消息 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a27a8f388e30b0b4b0797d59cee92609ba2f69650dda4bc9de98454a66d4eb7106"></a>HH_MSG_INFORM&#160;</td><td class="fielddoc">
+<p>设备主动上报消息，需要应答 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a27a8f388e30b0b4b0797d59cee92609baf00820569483fdc14106dc8ac8c8740f"></a>HH_MSG_GATEWAY&#160;</td><td class="fielddoc">
+<p>网关类型设备返回的查询结果 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a5b5d15eee725076fb83f388d51f7c129"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="hhp_8h.html#a5b5d15eee725076fb83f388d51f7c129">hh_oid_name</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>PDU配置项名称</p>
+<p>Object ID通常指设备属性ID(名称),设备可能存在多种OID </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a5b5d15eee725076fb83f388d51f7c129a657970c18e74bc93a0f9054b4cec3e66"></a>HH_OID_SWITCH&#160;</td><td class="fielddoc">
+<p>开关 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a5b5d15eee725076fb83f388d51f7c129a39ccf96192930966c2144674e1360181"></a>HH_OID_SWITCH_STATUS&#160;</td><td class="fielddoc">
+<p>开关状态 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a5b5d15eee725076fb83f388d51f7c129a0f4534c67ebfb41e4c46933ecbd2a208"></a>HH_OID_ION&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a5b5d15eee725076fb83f388d51f7c129a00d566c3d7b195d46ea9c975bc4fcf92"></a>HH_OID_ION_STATUS&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a5b5d15eee725076fb83f388d51f7c129ae86c3f39eebad6339f875147de89c6c0"></a>HH_OID_ION_ELEC&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a95b9ce8c5f2b2da9d20649f8fcb7180c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="hhp_8h.html#a95b9ce8c5f2b2da9d20649f8fcb7180c">hh_oid_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>PDU配置项数据类型 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a95b9ce8c5f2b2da9d20649f8fcb7180ca627e0ff4d654d271336a75f15936dcd0"></a>HH_OID_INTEGER&#160;</td><td class="fielddoc">
+<p>Integer 类型, 必须为 0x02 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a95b9ce8c5f2b2da9d20649f8fcb7180ca048174ebf3790468e65dec94ff740d2c"></a>HH_OID_OCTET_STRING&#160;</td><td class="fielddoc">
+<p>String 类型, 必须为 0x04 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a687bd14d8a4aa16f6fa6a34b15f1640e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hh_dev_reg_cb_report </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structhh__dev__info.html">hh_dev_info</a> *&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>注册设备主动上报回调函数 </p>
+
+</div>
+</div>
+<a class="anchor" id="ac17eb200aa79688cf4504f710d6c3488"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t hh_dev_send_msg </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>dev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送PDU报文到设备 </p>
+<p>发送PDU报文到设备，发送之前应先调用hh_msg_set_item创建Set PDU</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad2e26d540938c15dd7d3a341b0ac4ffe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hh_get_gateway_info </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t **&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取Gateway设备返回的查询信息 </p>
+<dl class="section note"><dt>注解</dt><dd>该函数仅在<a class="el" href="hhp_8h.html#a05ff27fcd501dc489449c057880c8dd7">hh_usart_read</a> 接收到的报文数据类型等于<a class="el" href="hhp_8h.html#a27a8f388e30b0b4b0797d59cee92609baf00820569483fdc14106dc8ac8c8740f">HH_MSG_GATEWAY</a> 时有效，应用程序需要首先调用<a class="el" href="hhp_8h.html#ad0a9c3f0a08a8dd6db2dc45faeccb57a">hh_msg_gateway_query_detail</a>, <a class="el" href="hhp_8h.html#a28be4ac81f3a213f5cbd9a6e3266d318">hh_msg_gateway_query_devlist</a> hh_msg_gateway_query_taglist发送相应的查询报文。</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">data</td><td>数据指针 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">len</td><td>数据长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a1b4791e9c6376aaf7ac90e036ef07698"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t hh_join_ack </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structhh__dev__info.html">hh_dev_info</a> *&#160;</td>
+          <td class="paramname"><em>info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>accept</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>应答新设备加入请求 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad0a9c3f0a08a8dd6db2dc45faeccb57a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hh_msg_gateway_query_detail </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送查询消息到Gateway设备，查询命令为Detail </p>
+<p>该函数并不会立即发送查询报文到设备。用户需要继续调用<a class="el" href="hhp_8h.html#ac17eb200aa79688cf4504f710d6c3488">hh_dev_send_msg</a> 来完成发送. </p>
+
+</div>
+</div>
+<a class="anchor" id="a28be4ac81f3a213f5cbd9a6e3266d318"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hh_msg_gateway_query_devlist </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送查询消息到Gateway设备，查询命令为DevList </p>
+<p>该函数并不会立即发送查询报文到设备。用户需要继续调用<a class="el" href="hhp_8h.html#ac17eb200aa79688cf4504f710d6c3488">hh_dev_send_msg</a> 来完成发送. </p>
+
+</div>
+</div>
+<a class="anchor" id="a39226e1e2140165064d1ba1a4f7a54bf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hh_msg_gateway_query_taglist </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送查询消息到Gateway设备，查询命令为TagList </p>
+<p>该函数并不会立即发送查询报文到设备。用户需要继续调用<a class="el" href="hhp_8h.html#ac17eb200aa79688cf4504f710d6c3488">hh_dev_send_msg</a> 来完成发送. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad06f3447a19ee4869d456faf061381c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t hh_msg_get_dev_id </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>dev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取PDU报文发送设备的ID </p>
+<p>该函数仅在<a class="el" href="hhp_8h.html#a05ff27fcd501dc489449c057880c8dd7">hh_usart_read</a> 接收到的报文数据类型不等于 HH_MSG_DATA时 有效。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">设备ID指针</td><td>saddr</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>获取结果 </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">HHP_STATUS_OK</td><td>正确获取到到子设备ID </td></tr>
+    <tr><td class="paramname">HHP_NO_RESOURCE</td><td>未接收到子设备消息或消息格式错误 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a930e6d6848ed6dab5d3ca00eb5e0f974"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t hh_msg_get_next_item </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structhh__oid__entry.html">hh_oid_entry</a> *&#160;</td>
+          <td class="paramname"><em>entry</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取PDU报文中的配置项信息 </p>
+<p>子设备返回的PDU报文中可存在多个配置项，调用该函数可返回下一个配置项的信 息，当返回<a class="el" href="hhp__error__code_8h.html#ab598768642336506cc2950bd3fdbad81">HHP_NO_RESOURCE</a> 时表明所有配置项已轮询完毕。通常一个配置项 信息包含：名称，类型，索引值，配置值。</p>
+<dl class="section note"><dt>注解</dt><dd>该函数仅在<a class="el" href="hhp_8h.html#a05ff27fcd501dc489449c057880c8dd7">hh_usart_read</a> 接收到的报文数据类型不等于 HH_MSG_DATA时有效。</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">entry</td><td>配置项信息,包含名称,类型,索引,值</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>获取结果 </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">HHP_STATUS_OK</td><td>正确获取到到子设备ID </td></tr>
+    <tr><td class="paramname">HHP_NO_RESOURCE</td><td>未接收到子设备消息或消息格式错误 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a87c2421a69f6bc778b1d1a20501c413c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t hh_msg_set_item </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structhh__oid__entry.html">hh_oid_entry</a> *&#160;</td>
+          <td class="paramname"><em>entry</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建Set PDU报文中的配置项信息。 </p>
+<p>创建一个Set PDU报文，一个Set PDU报文中可存在多个配置项。该函数并不会发送 Set PDU报文到设备。用户需要继续调用hh_dev_send_msg来完成发送 Set PDU报文。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">entry</td><td>配置项信息,包含名称,类型,索引,值</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>操作结果 </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">HHP_STATUS_OK</td><td>正确创建Set PDU报文。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a949a8f411c0bcaac8dd1fa4f278cc559"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hh_reg_join_cb_func </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(struct <a class="el" href="structhh__dev__info.html">hh_dev_info</a> *, enum <a class="el" href="hhp_8h.html#a3b8d1b9a4b349acdeeace7b7cb915d4b">hh_join_stage</a>)&#160;</td>
+          <td class="paramname"><em>join_req</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>注册新设备加入回调函数 </p>
+
+</div>
+</div>
+<a class="anchor" id="a83e4ed77e3b8d7d46e724f26139d6840"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t hh_switch_status </td>
+          <td>(</td>
+          <td class="paramtype">enum <a class="el" href="hhp_8h.html#a77916e99881f135882fca12cd8badb50">hh_conn_status</a>&#160;</td>
+          <td class="paramname"><em>status</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>切换Zigbee模块工作状态 </p>
+<p>切换HomeHeart Zigbee模块工作状态，<a class="el" href="hhp_8h.html#a77916e99881f135882fca12cd8badb50a6afeda4d7d7aa514f6fa0b450db696c3">HH_CONN_ONLINE</a> 在线通讯状态，模块 可以与子设备正常通讯。HH_CONN_JOINING 组网状态，模块可以接收/应答新 设备入网请求。</p>
+<dl class="section note"><dt>注解</dt><dd>在切换到组网状态前，需要先调用 <a class="el" href="hhp_8h.html#a687bd14d8a4aa16f6fa6a34b15f1640e">hh_dev_reg_cb_report()</a> 函数，注册 入网请求回调函数。在组网状态下时，模块无法与已注册的设备进行通讯。组网状态 持续时间建议60秒。</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">status</td><td>工作状态 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a05ff27fcd501dc489449c057880c8dd7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="hhp_8h.html#a27a8f388e30b0b4b0797d59cee92609b">hh_msg_type</a> hh_usart_read </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取串口数据 </p>
+<p>接收Zigbee串口数据，并解析接收到的数据报文, 用户程序判断串口有数据到达后， 调用该函数来接收数据。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>串口数据</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>接收到的报文数据类型 </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">HH_MSG_DATA</td><td>报文数据，报文还未接收完成，需要继续接收报文后续数据 </td></tr>
+    <tr><td class="paramname">HH_MSG_CTRL</td><td>控制报文 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a3979e3a5a42c1cc8a08251522909d5a4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hh_usart_reg_write_func </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(uint8_t)&#160;</td>
+          <td class="paramname"><em>usart_send</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>注册串口发送函数 </p>
+
+</div>
+</div>
+<a class="anchor" id="a0398e5f500855d8c263266ce435bbb0d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hh_usart_reset_buf </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>重置串口接收缓冲区 </p>
+<p>通常串口在接收一个有效的数据包时，接收字节之间的间隔应小于一定的间隔， 如果接收字节间隔过长，并且前一个数据帧未接收完成，则可能发生串口数据丢失 。应用程序可以在判断接收超时后调用该函数重置协议栈的串口接收缓冲区，建议 应用程序超时判断设置为100ms。 </p>
+
+</div>
+</div>
+<a class="anchor" id="a8d4c02849c73b93b7317d901576cf3fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hh_usart_write </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>串口接收函数 </p>
+<p>接收串口数据，用户程序判断串口有数据到达后，调用该函数来接收数据。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>串口数据</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2016年 十月 7日 星期五 21:54:49 , 为 hhp使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

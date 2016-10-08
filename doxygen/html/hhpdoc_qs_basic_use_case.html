@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>hhp: 快速入门指南</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">hhp
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">快速入门指南 </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>HomeHeart Protocol SDK 协议栈(以下简称SDK或HHPSDK)是家联IOT(Internet of Things)系统的中间价软件包，主要目的为第三方合作伙伴提供接入并使用家联物 联网智能设备的软件控制接口。SDK使用标准C语言实现，并提供了一套易于使用的 API接口。SDK软件包可以使用在任任意微控制器或微处理器平台。</p>
+<div class="image">
+<img src="coordinator.jpg" alt="coordinator.jpg"/>
+</div>
+<p>HomeHeart Protocol SDK (hhpsdk) 使用步骤:</p><ul>
+<li>初始化 SDK</li>
+<li>重启 Zigbee Coordinator (协调器) 模块</li>
+<li>初始化 Zigbee Coordinator (协调器) 模块</li>
+<li>切换 Zigbee Coordinator 模块工作状态</li>
+<li>注册新设备入网</li>
+<li>获取设备信息</li>
+<li>修改设备参数</li>
+<li>接收设备通知信息</li>
+</ul>
+<h1><a class="anchor" id="hhpdoc_qs_sdk_init"></a>
+初始化 SDK</h1>
+<p>SDK使用过程中需要调用系统外设函数来完成串口的数据收发，以及调用用户注册 的回调函数完成设备控制的相关功能。SDK协议栈初始化，主要完成向SDK注册回 调函数，并开始接收协调器数据。</p>
+<h2><a class="anchor" id="hhpdoc_qs_sdk_init_reg_usart_send"></a>
+注册串口发送函数</h2>
+<p>协议栈在使用过程中需要使用系统的串口来发送数据到zigbee协调器，应用程序需要调用 hh_usart_reg_write_func实现串口发送函数的注册。 </p><div class="fragment"><div class="line">  <span class="comment">/* User Application need to implement USART send function */</span></div><div class="line">  <span class="keyword">extern</span> <span class="keywordtype">void</span> usart_write(uint8_t data);</div><div class="line">  <a class="code" href="hhp_8h.html#a3979e3a5a42c1cc8a08251522909d5a4">hh_usart_reg_write_func</a>(usart_write);</div></div><!-- fragment --> <h2><a class="anchor" id="hhpdoc_qs_sdk_init_reg_dev_cb"></a>
+注册设备主动上报回调函数</h2>
+<p>通常在设备的注册过程中，会主动上报注册请求报文，SDK在收到注册请求报文后，会 调用应用层注册的回调函数通知应用程序.<a class="el" href="hhp_8h.html#a949a8f411c0bcaac8dd1fa4f278cc559">hh_reg_join_cb_func</a> </p><div class="fragment"><div class="line">    <a class="code" href="hhp_8h.html#a949a8f411c0bcaac8dd1fa4f278cc559">hh_reg_join_cb_func</a>(demo_join_req_cb);</div></div><!-- fragment --> <h1><a class="anchor" id="hhpdoc_qs_usart_read"></a>
+串口数据读取</h1>
+<p>应用程序在接收到串口接收到数据后，需要调用hh_usart_read函数来使用SDK解析 收到的数据，根据函数返回的数据类型，应用程序可以得知所收的数据包是否已完成。</p><ul>
+<li>当返回类型为<a class="el" href="hhp_8h.html#a27a8f388e30b0b4b0797d59cee92609bae04dd5fb9b7285a051a145a1ecf05ce2">HH_MSG_DATA</a> 时，表明数据包还未接收完毕，应用程序需要继续等待 串口接收数据。</li>
+<li>当返回类型为<a class="el" href="hhp_8h.html#a27a8f388e30b0b4b0797d59cee92609bad4dc25faa9c530b2e8c4c8b3299231b5">HH_MSG_CTRL</a> 时，表明收到的为控制报文。</li>
+<li>当返回类型为<a class="el" href="hhp_8h.html#a27a8f388e30b0b4b0797d59cee92609ba5f4a2b16af3cb09489adf39a7a20b39c">HH_MSG_TRAP</a> <a class="el" href="hhp_8h.html#a27a8f388e30b0b4b0797d59cee92609ba2249e319624f81fb95e6518d21d17ef3">HH_MSG_SET_RESP</a> <a class="el" href="hhp_8h.html#a27a8f388e30b0b4b0797d59cee92609baa6b4c470e232fe47c3427f56d1bc9010">HH_MSG_GET_RESP</a> <a class="el" href="hhp_8h.html#a27a8f388e30b0b4b0797d59cee92609ba2f69650dda4bc9de98454a66d4eb7106">HH_MSG_INFORM</a> 时，表明收到的数据为设备主动上报报文，应用程序 可以调用hh_msg_get_next_item来获取配置项信息。</li>
+<li>当返回类型为HH_MSG_GATEWAY时，表明收到的数据为网关类型设备所返回的查询 结果。</li>
+</ul>
+<h1><a class="anchor" id="hhpdoc_qs_zigbee_control"></a>
+组网控制</h1>
+<p>可以通过调用<a class="el" href="hhp_8h.html#a83e4ed77e3b8d7d46e724f26139d6840">hh_switch_status</a> 来切换协调器当前状态，<a class="el" href="hhp_8h.html#a77916e99881f135882fca12cd8badb50a3cd976b5f742e09a33a283a0b3abf46f">HH_CONN_CTRL</a> 仅 处理组网相关的数据报文。<a class="el" href="hhp_8h.html#a77916e99881f135882fca12cd8badb50a6afeda4d7d7aa514f6fa0b450db696c3">HH_CONN_ONLINE</a> 可以接收子设备发送的数据报文。</p>
+<h1><a class="anchor" id="hhpdoc_qs_dev_control"></a>
+设备控制</h1>
+<p>调用<a class="el" href="hhp_8h.html#a87c2421a69f6bc778b1d1a20501c413c">hh_msg_set_item</a> 控制设备，该函数并不会立即发送数据到设备，应用程序 需要继续调用<a class="el" href="hhp_8h.html#ac17eb200aa79688cf4504f710d6c3488">hh_dev_send_msg</a> 来完成控制信息的发送。</p>
+<h1><a class="anchor" id="hhpdoc_qs_gateway"></a>
+网关类型设备的控制</h1>
+<p>网关类型设备由于含有不同类型的子设备，所以其控制项存在多种组合，应用程序可以 通过发送网关查询报文来获取其相应的设置项<a class="el" href="hhp_8h.html#ad0a9c3f0a08a8dd6db2dc45faeccb57a">hh_msg_gateway_query_detail</a> <a class="el" href="hhp_8h.html#a28be4ac81f3a213f5cbd9a6e3266d318">hh_msg_gateway_query_devlist</a> <a class="el" href="hhp_8h.html#a39226e1e2140165064d1ba1a4f7a54bf">hh_msg_gateway_query_taglist</a> 并通过<a class="el" href="hhp_8h.html#ad2e26d540938c15dd7d3a341b0ac4ffe">hh_get_gateway_info</a> 来获取网关设备返回的信息。</p>
+<h1><a class="anchor" id="hhpdoc_qs_zigbee_fw_upgrade"></a>
+协调器固件烧录</h1>
+<p>Zigbee协调器在使用前，需要先烧录固件程序。</p><ul>
+<li>将协调器模块模块连接到电脑USB口</li>
+<li>将Zigbee(CC2530)烧录器连接到协调器模块</li>
+<li>将fw/CC2530SB.hex bootloader通过烧录器烧写到cc2530</li>
+<li>断开烧录器（后续步骤不再需要烧录器）</li>
+<li>主程序通过SerialBootTool.exe烧写的cc2530, 串口参数为115200, 8N1。需要注意在 烧写前需要按一下协调器模块的Reset按钮，然后点击Load Image（重起后的2秒内）按 钮进行串口烧录。</li>
+</ul>
+<h1><a class="anchor" id="hhpdoc_qs_windows_app"></a>
+Win32测试源代码使用</h1>
+<p>下载codeblock mingw-nosetup <a href="http://www.codeblocks.org/downloads,">http://www.codeblocks.org/downloads,</a> 打开 hhp.workspace，编译homeheartprotocol工程即可得到Win32 Console应用程序 </p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2016年 十月 7日 星期五 21:54:49 , 为 hhp使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

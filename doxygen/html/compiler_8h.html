@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>hhp: compiler.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">hhp
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a>  </div>
+  <div class="headertitle">
+<div class="title">compiler.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+</div>
+<p><a href="compiler_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ab305a15cf9d17019f32806790bc064cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compiler_8h.html#ab305a15cf9d17019f32806790bc064cd">_COMPIER_H_</a></td></tr>
+<tr class="separator:ab305a15cf9d17019f32806790bc064cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a467651774c853f8798fad896b9c1a146"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compiler_8h.html#a467651774c853f8798fad896b9c1a146">COMPILER_PRAGMA</a>(arg)                &#160;&#160;&#160;_Pragma(#arg)</td></tr>
+<tr class="memdesc:a467651774c853f8798fad896b9c1a146"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emit the compiler pragma <em>arg</em>.  <a href="#a467651774c853f8798fad896b9c1a146">更多...</a><br /></td></tr>
+<tr class="separator:a467651774c853f8798fad896b9c1a146"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2c02ff865ca6538b4b1bddbf2a6876c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compiler_8h.html#ae2c02ff865ca6538b4b1bddbf2a6876c">COMPILER_PACK_SET</a>(alignment)&#160;&#160;&#160;<a class="el" href="compiler_8h.html#a467651774c853f8798fad896b9c1a146">COMPILER_PRAGMA</a>(pack(alignment))</td></tr>
+<tr class="memdesc:ae2c02ff865ca6538b4b1bddbf2a6876c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set maximum alignment for subsequent struct and union definitions to <em>alignment</em>.  <a href="#ae2c02ff865ca6538b4b1bddbf2a6876c">更多...</a><br /></td></tr>
+<tr class="separator:ae2c02ff865ca6538b4b1bddbf2a6876c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae62cd1675e098f78fd9df79143632cb6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compiler_8h.html#ae62cd1675e098f78fd9df79143632cb6">COMPILER_PACK_RESET</a>()              &#160;&#160;&#160;<a class="el" href="compiler_8h.html#a467651774c853f8798fad896b9c1a146">COMPILER_PRAGMA</a>(pack())</td></tr>
+<tr class="memdesc:ae62cd1675e098f78fd9df79143632cb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set default alignment for subsequent struct and union definitions.  <a href="#ae62cd1675e098f78fd9df79143632cb6">更多...</a><br /></td></tr>
+<tr class="separator:ae62cd1675e098f78fd9df79143632cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="ab305a15cf9d17019f32806790bc064cd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _COMPIER_H_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae62cd1675e098f78fd9df79143632cb6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define COMPILER_PACK_RESET</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="compiler_8h.html#a467651774c853f8798fad896b9c1a146">COMPILER_PRAGMA</a>(pack())</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set default alignment for subsequent struct and union definitions. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae2c02ff865ca6538b4b1bddbf2a6876c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define COMPILER_PACK_SET</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">alignment</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="compiler_8h.html#a467651774c853f8798fad896b9c1a146">COMPILER_PRAGMA</a>(pack(alignment))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set maximum alignment for subsequent struct and union definitions to <em>alignment</em>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a467651774c853f8798fad896b9c1a146"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define COMPILER_PRAGMA</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">arg</td><td>)</td>
+          <td>&#160;&#160;&#160;_Pragma(#arg)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Emit the compiler pragma <em>arg</em>. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">arg</td><td>The pragma directive as it would appear after <em>#pragma</em> (i.e. not stringified). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2016年 十月 7日 星期五 21:54:49 , 为 hhp使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

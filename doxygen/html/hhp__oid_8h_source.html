@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>hhp: hhp_oid.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">hhp
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">hhp_oid.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="hhp__oid_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _HHP_MSG_ENTRY_H_</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _HHP_MSG_ENTRY_H_</span></div><div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="hhp__oid_8h.html#a2f62f2226e9bd3461b153192a7f0d514">    3</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="hhp__oid_8h.html#a2f62f2226e9bd3461b153192a7f0d514">msg_item_type</a> {</div><div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="hhp__oid_8h.html#a2f62f2226e9bd3461b153192a7f0d514afce8a7050b405f3d5e58f5511c1dc213">    4</a></span>&#160;        <a class="code" href="hhp__oid_8h.html#a2f62f2226e9bd3461b153192a7f0d514afce8a7050b405f3d5e58f5511c1dc213">MSG_ENTRY_ONOFF</a>,</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;};</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="hhp__oid_8h.html#a5c3119a61667c0da6ae9a80e211195ec">    7</a></span>&#160;<span class="preprocessor">#define MAX_OID         14</span></div><div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="hhp__oid_8h.html#ab5187269936538ffb8ccbbe7115ffdbc">    8</a></span>&#160;<span class="preprocessor">#define MAX_STRING      40</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">struct </span><a class="code" href="structmsg__entry.html">msg_entry</a> {</div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="structmsg__entry.html#a3c7ca76f59a12b44a3907579be8009fe">   11</a></span>&#160;        <span class="keyword">enum</span> <a class="code" href="hhp_8h.html#aba91fa6e34cee1d7f15cd84f12ca9990">hh_dev_type</a> <a class="code" href="structmsg__entry.html#a3c7ca76f59a12b44a3907579be8009fe">devType</a>;</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="structmsg__entry.html#a1c1e9bc8ac7b3e5a24ffe5afc92031e1">   12</a></span>&#160;        <span class="keyword">enum</span> <a class="code" href="hhp_8h.html#a95b9ce8c5f2b2da9d20649f8fcb7180c">hh_oid_type</a> <a class="code" href="structmsg__entry.html#a1c1e9bc8ac7b3e5a24ffe5afc92031e1">oidType</a>;</div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="structmsg__entry.html#aec80dd12f39446f418c5a79aa7998b1f">   13</a></span>&#160;        uint8_t <a class="code" href="structmsg__entry.html#aec80dd12f39446f418c5a79aa7998b1f">oidlen</a>;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        uint8_t <a class="code" href="structmsg__entry.html#aae5a12e607d0f782506d9e6ec6179c64">index</a>; </div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        uint8_t <a class="code" href="structmsg__entry.html#aa9ee8838a4094c838c921a14397f7987">oid</a>[<a class="code" href="hhp__oid_8h.html#a5c3119a61667c0da6ae9a80e211195ec">MAX_OID</a>];</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structmsg__entry.html#a6b7b7ceb405c88144ed466f8d84006b8">   16</a></span>&#160;        uint8_t <a class="code" href="structmsg__entry.html#a6b7b7ceb405c88144ed466f8d84006b8">dataType</a>;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        uint16_t *dataIndex </div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;};</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _HHP_MSG_ENTRY_H_ */</span><span class="preprocessor"></span></div><div class="ttc" id="structmsg__entry_html_a1c1e9bc8ac7b3e5a24ffe5afc92031e1"><div class="ttname"><a href="structmsg__entry.html#a1c1e9bc8ac7b3e5a24ffe5afc92031e1">msg_entry::oidType</a></div><div class="ttdeci">enum hh_oid_type oidType</div><div class="ttdef"><b>Definition:</b> hhp_oid.h:12</div></div>
+<div class="ttc" id="hhp__oid_8h_html_a2f62f2226e9bd3461b153192a7f0d514afce8a7050b405f3d5e58f5511c1dc213"><div class="ttname"><a href="hhp__oid_8h.html#a2f62f2226e9bd3461b153192a7f0d514afce8a7050b405f3d5e58f5511c1dc213">MSG_ENTRY_ONOFF</a></div><div class="ttdef"><b>Definition:</b> hhp_oid.h:4</div></div>
+<div class="ttc" id="structmsg__entry_html_a3c7ca76f59a12b44a3907579be8009fe"><div class="ttname"><a href="structmsg__entry.html#a3c7ca76f59a12b44a3907579be8009fe">msg_entry::devType</a></div><div class="ttdeci">enum hh_dev_type devType</div><div class="ttdef"><b>Definition:</b> hhp_oid.h:11</div></div>
+<div class="ttc" id="structmsg__entry_html_aa9ee8838a4094c838c921a14397f7987"><div class="ttname"><a href="structmsg__entry.html#aa9ee8838a4094c838c921a14397f7987">msg_entry::oid</a></div><div class="ttdeci">uint8_t oid[14]</div><div class="ttdef"><b>Definition:</b> hhp.h:108</div></div>
+<div class="ttc" id="hhp_8h_html_aba91fa6e34cee1d7f15cd84f12ca9990"><div class="ttname"><a href="hhp_8h.html#aba91fa6e34cee1d7f15cd84f12ca9990">hh_dev_type</a></div><div class="ttdeci">hh_dev_type</div><div class="ttdef"><b>Definition:</b> hhp.h:75</div></div>
+<div class="ttc" id="hhp_8h_html_a95b9ce8c5f2b2da9d20649f8fcb7180c"><div class="ttname"><a href="hhp_8h.html#a95b9ce8c5f2b2da9d20649f8fcb7180c">hh_oid_type</a></div><div class="ttdeci">hh_oid_type</div><div class="ttdef"><b>Definition:</b> hhp.h:55</div></div>
+<div class="ttc" id="structmsg__entry_html_aec80dd12f39446f418c5a79aa7998b1f"><div class="ttname"><a href="structmsg__entry.html#aec80dd12f39446f418c5a79aa7998b1f">msg_entry::oidlen</a></div><div class="ttdeci">uint8_t oidlen</div><div class="ttdef"><b>Definition:</b> hhp_oid.h:13</div></div>
+<div class="ttc" id="hhp__oid_8h_html_a5c3119a61667c0da6ae9a80e211195ec"><div class="ttname"><a href="hhp__oid_8h.html#a5c3119a61667c0da6ae9a80e211195ec">MAX_OID</a></div><div class="ttdeci">#define MAX_OID</div><div class="ttdef"><b>Definition:</b> hhp_oid.h:7</div></div>
+<div class="ttc" id="structmsg__entry_html"><div class="ttname"><a href="structmsg__entry.html">msg_entry</a></div><div class="ttdef"><b>Definition:</b> hhp.h:102</div></div>
+<div class="ttc" id="structmsg__entry_html_aae5a12e607d0f782506d9e6ec6179c64"><div class="ttname"><a href="structmsg__entry.html#aae5a12e607d0f782506d9e6ec6179c64">msg_entry::index</a></div><div class="ttdeci">uint8_t index</div><div class="ttdef"><b>Definition:</b> hhp.h:107</div></div>
+<div class="ttc" id="hhp__oid_8h_html_a2f62f2226e9bd3461b153192a7f0d514"><div class="ttname"><a href="hhp__oid_8h.html#a2f62f2226e9bd3461b153192a7f0d514">msg_item_type</a></div><div class="ttdeci">msg_item_type</div><div class="ttdef"><b>Definition:</b> hhp_oid.h:3</div></div>
+<div class="ttc" id="structmsg__entry_html_a6b7b7ceb405c88144ed466f8d84006b8"><div class="ttname"><a href="structmsg__entry.html#a6b7b7ceb405c88144ed466f8d84006b8">msg_entry::dataType</a></div><div class="ttdeci">uint8_t dataType</div><div class="ttdef"><b>Definition:</b> hhp_oid.h:16</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2016年 十月 7日 星期五 21:54:49 , 为 hhp使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>
